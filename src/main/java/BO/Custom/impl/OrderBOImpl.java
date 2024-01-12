@@ -13,7 +13,7 @@ import java.sql.SQLException;
 import java.time.LocalDate;
 
 public class OrderBOImpl implements OrderBO {
-    ProductCategoryDAO productDAO = (ProductCategoryDAO) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.PRODUCTS);
+    ProductCategoryDAO productDAO = (ProductCategoryDAO) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.PRODUCT);
 
     OrderDetailDAO orderDetailDAO = (OrderDetailDAO) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.ORDER_DETAILS);
 
